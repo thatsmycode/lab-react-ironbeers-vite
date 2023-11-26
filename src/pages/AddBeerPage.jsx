@@ -1,4 +1,4 @@
-import axios from "axios";
+
 import  { useState } from "react";
 
 export default function AddBeerPage() {
@@ -25,10 +25,14 @@ export default function AddBeerPage() {
     console.log(beerData);
 
     try {
-      const response = await axios.post(
-        "https://ih-beers-api2.herokuapp.com/beers/new",
-        beerData
-      );
+      const response = await fetch("https://ih-beers-api2.herokuapp.com/beers/new",{
+        method:"POST",
+        headers: {
+          "Content-Type":"application/json",
+        },
+        body: JSON.stringify(beerData)
+
+      });
 
       if (response.status === 200) {
         alert("Data successfully sent!");
