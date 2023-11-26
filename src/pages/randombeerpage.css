@@ -1,0 +1,22 @@
+.randomBeer-box{
+   display: flex;
+ 
+   height: calc(100vh - 100px);
+    width: 100%;
+} 
+.left{
+    width: 20vw;
+}
+.random-info{
+    
+ width: 100%;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+padding: 20px;
+}
+ img{
+height: 500px;
+width: auto;
+margin: 50px;
+}

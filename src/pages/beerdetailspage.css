@@ -1,0 +1,15 @@
+.beer-card{
+    background-color: red;
+    display: flex;
+    height: calc(100vh - 100px);
+}
+.beer-card img{
+height: 500px;
+width: auto;
+margin: 50px;
+}
+.beer-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}

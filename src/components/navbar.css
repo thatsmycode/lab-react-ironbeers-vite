@@ -1,0 +1,8 @@
+nav{
+    height: 100px;
+    background-color: lightseagreen;
+    background-image:url("../assets/navbar.png") ;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
